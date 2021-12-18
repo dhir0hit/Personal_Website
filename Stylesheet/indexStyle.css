@@ -40,6 +40,7 @@ body nav ul #SideBar_img img {
   height: 250px;
   background-color: #818181;
   border-radius: 50%;
+  object-fit: cover;
 }
 body nav ul li {
   margin: 0.1rem 1.5rem;
@@ -185,6 +186,7 @@ body main article img {
   width: 20rem;
   background-color: #818181;
   height: 20rem;
+  object-fit: cover;
   border-radius: 50%;
 }
 body main article h2 {

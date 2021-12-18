@@ -53,6 +53,7 @@ body {
           height: 250px;
           background-color: #818181;
           border-radius: 50%;
+          object-fit: cover;
         }
       }
       li {
@@ -202,6 +203,7 @@ body {
         width: 20rem;
         background-color: #818181;
         height: 20rem;
+        object-fit: cover;
         border-radius: 50%;
       }
       h2{

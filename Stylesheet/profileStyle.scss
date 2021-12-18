@@ -1,0 +1,24 @@
+$primary_foreground_color: #05e0f1;
+$primary_background_color: #fff;
+$secondary_foreground_color: #2c7498;
+$primary_gradient: linear-gradient(to right, $primary_foreground_color, $secondary_foreground_color);
+$Sidebar_width: 330px;
+
+$Comfotoo_font: 'Comfortaa', cursive;
+$Sidebar_Links: 'Quicksand', sans-serif;
+$font_cursive_one: 'Caveat', cursive;
+$bebas_neue_font: 'Bebas Neue', cursive;
+$Dancing_Script_font: 'Dancing Script', cursive;
+
+@mixin linear-gradient($direction, $gradients...) {
+  background-color: nth($gradients, 1);
+  background-image: linear-gradient($direction, $gradients...);
+}
+
+body{
+  main {
+    nav {
+
+    }
+  }
+}
