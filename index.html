@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="personal profile website">
+    <meta name="keywords" content="software developer profile">
+    <meta name="author" content="Rohit Kumar Dhir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Rohit Kumar Dhir</title>
+    <link rel="shortcut icon" href="Media/picture.jpg">
+    <link rel="stylesheet" href="Stylesheet/indexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500&family=Comfortaa:wght@300;400;500&family=Dancing+Script:wght@500&family=Quicksand:wght@400;500&family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="SideBar_Nav">
+        <button onclick="closeSideBar()">&times;</button>
+        <ul>
+            <li id="SideBar_img"><img src="Media/picture-copy.jpg"
+                     alt="picture"
+
+                     srcset="Media/picture682x384-copy.jpg 480w,
+                             Media/picture1930x1086-copy.jpg 960w,
+                             Media/picture-copy.jpg 1920w"
+            ></li>
+            <li class="home active"><a href="#"><img src="Media/home_white_18dp.svg" alt="home icon"><span>Home</span></a></li>
+            <li><a href="#"><img src="Media/person_white_18dp.svg" alt="Profile icon"><span>Profile</span></a></li>
+            <li><a href="#"><img src="Media/description_white_18dp.svg" alt="resume icon"><span>Resume</span></a></li>
+            <li><a href="#"><img src="Media/contact_page_white_18dp.svg" alt="contact information icon"><span>Contact</span></a></li>
+        </ul>
+        <section class="social_media_accounts">
+            <a href="https://twitter.com/RohitDh21909554?t=QY1OgAVaqMyyagQqNs9LmA&s=09" target="_blank"><img src="Media/twitterIcon.png" alt="Twitter icon"></a>
+            <a href="https://www.linkedin.com/in/rohit-kumar-dhir-70275a211/" target="_blank"><img src="Media/linkedinLogo.png" alt="Linkedin icon"></a>
+            <a href="mailto:rohit786dhir@gmail.com"><img src="Media/emailIcon.png" alt="Email icon"></a>
+            <a href="#"><img src="Media/instagramLogo.png" alt="Instagram icon"></a>
+        </section>
+        <section id="footer">
+            &copy; 2021 by <span>GitHub</span>
+        </section>
+    </nav>
+
+    <main id="main_content">
+        <div id="alert_items">
+            <div id="alert_info">
+                <div><b id="alert_first_text">sample</b><h4 id="alert_second_text">text</h4></div>
+                <span class="close_button">&times;</span>
+            </div>
+        </div>
+        <button class="open_SideBar" onclick="openSideBar()"><span>☰ Open Sidebar</span></button>
+        <article>
+                <img src="Media/picture-copy.jpg"
+                    alt="picture"
+
+                    srcset="Media/picture682x384-copy.jpg 480w,
+                             Media/picture1930x1086-copy.jpg 960w,
+                             Media/picture-copy.jpg 1920w"
+                >
+            <h2>Hello, its student programmer</h2>
+            <h1>I am <span>Rohit Kumar Dhir</span></h1>
+            <p>Computer Science student who have crazy interest in programming</p>
+        </article>
+    </main>
+
+    <script type="text/javascript" src="Script/SidebarOptions.js"></script>
+</body>
+</html>

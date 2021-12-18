@@ -1,0 +1,274 @@
+$primary_foreground_color: #05e0f1;
+//$primary_foreground_color: linear-gradient();
+$primary_background_color: #000018;
+$secondary_foreground_color: #2c7498;
+$primary_gradient: linear-gradient(to right, $primary_foreground_color, $secondary_foreground_color);
+$Sidebar_width: 330px;
+
+$Comfotoo_font: 'Comfortaa', cursive;
+$Sidebar_Links: 'Quicksand', sans-serif;
+$font_cursive_one: 'Caveat', cursive;
+$bebas_neue_font: 'Bebas Neue', cursive;
+$Dancing_Script_font: 'Dancing Script', cursive;
+
+@mixin linear-gradient($direction, $gradients...) {
+  background-color: nth($gradients, 1);
+  background-image: linear-gradient($direction, $gradients...);
+}
+
+body {
+  overflow: hidden;
+  nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $primary_background_color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    button {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #818181;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }:hover {
+        color: #f1f1f1;
+      }
+    ul {
+      padding: 1rem;
+      margin: 0;
+      #SideBar_img {
+        border: none;
+        margin-bottom: 1rem;
+        img{
+          width: 250px;
+          height: 250px;
+          background-color: #818181;
+          border-radius: 50%;
+        }
+      }
+      li {
+        margin: 0.1rem 1.5rem;
+        padding: 0;
+        color: #f1f1f1;
+        list-style-type: none;
+        text-align: center;
+        overflow: hidden;
+        border-bottom: 1px solid #818181;
+        img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        a {
+          padding: 1.12rem 0;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font-family: $Sidebar_Links;
+          text-align: center;
+          letter-spacing: 3px;
+          transition: 0.3s;
+          span{
+            padding-left: 0.4rem;
+          }
+        }
+        a:hover {
+          color: #f1f1f1;
+        }
+
+      }
+      li:hover{
+        background-color: rgba(#818181, 0.2);
+      }
+      #SideBar_img:hover {
+        background-color: inherit;
+      }
+      li.home{
+        border-top: 1px solid #818181;
+      }
+      li.active {
+        background-image: $primary_gradient;
+        border: none;
+      }
+    }
+    section {
+      text-align: center;
+      margin: 1rem 0;
+      padding: 0;
+
+      img {
+        width: 30px;
+        padding: 0.3rem;
+        text-align: center;
+        height: auto;
+      }
+    }
+    #footer{
+      color: #f1f1f1;
+      font-family: $font_cursive_one;
+    }
+  }
+  main{
+    transition: margin-left .5s;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/Media/Background_Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    #alert_items{
+      position: fixed;
+      z-index: 1;
+      right: 1.5rem;
+      #alert_info{
+        display: none;
+        background-image: $primary_gradient;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: $Sidebar_Links;
+        text-transform: capitalize;
+        div{
+          display: inline-block;
+          vertical-align: middle;
+          b{
+            display: inline-block;
+            font-family: $Dancing_Script_font;
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+          h4{
+            display: inline-block;
+          }
+        }
+        span{
+          padding: 0;
+          margin: 0;
+          padding-left: 1rem;
+          display: inline-block;
+          font-size: 2rem;
+          vertical-align: middle;
+        }
+        span:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: $primary_background_color;
+      -webkit-text-fill-color: $primary_gradient;
+      padding: 0.62rem 0.9rem;
+      border: none;
+      span{
+        font-weight: bold;
+        font-family: 'Teko', sans-serif;
+        letter-spacing: 0.1rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        background-image: $primary_gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+      :hover{
+        background-color: #444;
+      }
+    }
+    article {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      color: #f1f1f1;
+      overflow: hidden;
+      height: 82vh;
+      text-align: center;
+      img{
+        margin: auto;
+        horiz-align: center;
+        width: 20rem;
+        background-color: #818181;
+        height: 20rem;
+        border-radius: 50%;
+      }
+      h2{
+        font-family: $Dancing_Script_font;
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+      h1{
+        padding: 0;
+        margin: 0;
+        font-family: $bebas_neue_font;
+        font-weight: lighter;
+        font-size: 2.7rem;
+        letter-spacing: 0.1rem;
+        span{
+          color: $primary_foreground_color;
+        }
+      }
+      p {
+        font-family: $Comfotoo_font;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-height: 450px) {
+  #SideBar_Nav {
+    padding-top: 15px;
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    nav{
+      width: 0;
+      ul {
+        #SideBar_img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+
+}
+
+@media (min-width: 801px) {
+  body {
+    nav {
+      width: $Sidebar_width;
+      ul {
+        #SideBar_img {
+          display: none;
+        }
+      }
+    }
+    main {
+      margin-left: $Sidebar_width;
+    }
+  }
+}
+
