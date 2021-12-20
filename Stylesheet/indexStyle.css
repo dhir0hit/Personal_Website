@@ -105,7 +105,7 @@ body nav #footer {
 body main {
   transition: margin-left 0.5s;
   padding: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://dhir0hit.github.io/Personal_Website/Media/Background_Image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://dhir0hit.github.io/Media/Background_Image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
