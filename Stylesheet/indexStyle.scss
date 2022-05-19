@@ -164,14 +164,23 @@ body {
         }
       }
     }
-    button {
+    button{
       font-size: 20px;
       cursor: pointer;
       background-color: $primary_background_color;
       -webkit-text-fill-color: $primary_gradient;
       padding: 0.62rem 0.9rem;
       border: none;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 40px;
+        height: 40px;
+        padding-right: 0.6rem;
+        display: inline-block;
+      }
       span{
+        display: inline-block;
         font-weight: bold;
         font-family: 'Teko', sans-serif;
         letter-spacing: 0.1rem;
@@ -185,7 +194,7 @@ body {
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
       }
-      :hover{
+      &:hover{
         background-color: #444;
       }
     }
@@ -229,6 +238,31 @@ body {
   }
 }
 
+button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: $primary_background_color;
+  -webkit-text-fill-color: $primary_gradient;
+  padding: 0.62rem 0.9rem;
+  border: none;
+  span{
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-image: $primary_gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  :hover{
+    background-color: #444;
+  }
+}
 
 
 @media screen and (max-height: 450px) {

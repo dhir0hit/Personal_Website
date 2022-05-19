@@ -152,6 +152,15 @@ body main footer {
   }
   body main nav ul li a {
     padding: 1.4rem 0;
+    font-size: 1.3rem;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+  body main section.side_info img {
+    margin-top: 1rem;
   }
   body main section.main_info article.top_article_info {
     top: 3.9rem;
@@ -169,6 +178,7 @@ body main footer {
     font-size: 1.3rem;
     font-family: "Quicksand", sans-serif;
     text-transform: uppercase;
+    color: black;
     letter-spacing: 3px;
     font-weight: 500;
   }
@@ -189,14 +199,13 @@ body main footer {
   }
   body main section.main_info {
     margin-left: 20vw;
-    padding-top: 1rem;
     height: 100%;
   }
-  body main section.main_info article.main_article_info {
+  body main section.main_info s article.main_article_info {
     padding: 2rem;
     font-size: 1.1rem;
   }
-  body main section.main_info article.main_article_info dl dt {
+  body main section.main_info s article.main_article_info dl dt {
     font-size: 1.7rem;
   }
   body main footer {

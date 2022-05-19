@@ -48,4 +48,6 @@ function alertItemOrder(first_text = "Thanks for visiting", second_text=", feel 
 
 window.onload = function () {
     setTimeout(alertItemOrder, 4000);
+
 }
+

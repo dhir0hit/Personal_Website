@@ -154,8 +154,17 @@ body main button {
   -webkit-text-fill-color: linear-gradient(to right, #05e0f1, #2c7498);
   padding: 0.62rem 0.9rem;
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+body main button img {
+  width: 40px;
+  height: 40px;
+  padding-right: 0.6rem;
+  display: inline-block;
 }
 body main button span {
+  display: inline-block;
   font-weight: bold;
   font-family: "Teko", sans-serif;
   letter-spacing: 0.1rem;
@@ -169,7 +178,7 @@ body main button span {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-body main button :hover {
+body main button:hover {
   background-color: #444;
 }
 body main article {
@@ -208,6 +217,32 @@ body main article h1 span {
 body main article p {
   font-family: "Comfortaa", cursive;
   font-size: 1.2rem;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000018;
+  -webkit-text-fill-color: linear-gradient(to right, #05e0f1, #2c7498);
+  padding: 0.62rem 0.9rem;
+  border: none;
+}
+button span {
+  font-weight: bold;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #05e0f1, #2c7498);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+button :hover {
+  background-color: #444;
 }
 
 @media screen and (max-height: 450px) {
