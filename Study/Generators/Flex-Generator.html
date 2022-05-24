@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="../../Media/9d340929286f4a25b4c18036d45eecf9.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400&family=Hind+Siliguri:wght@300;400;500&family=Meera+Inimai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1080.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2013/02/28/firefly-pointer.html" target="_blank" title="Firefly Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Firefly Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+    <link rel="stylesheet" href="../../css/navigationBar.css">
+    <link rel="stylesheet" href="../../css/carouselStyles.css">
+    <link rel="stylesheet" href="../../css/Study-Generator.css">
+    <link rel="stylesheet" href="../../css/botAnimationStyles.css">
+</head>
+<body>
+    <nav>
+        <ul class="navigation_bar-logo"><a href="../../Index.html"><img src="../../Media/Logo.png" alt="Logo"></a></ul>
+        <ul class="navigation_bar">
+            <li><a class="navigation_bar-link" href="../../Index.html">Home</a></li>
+            <li><a class="navigation_bar-link" href="#">Profile</a></li>
+            <li><a class="navigation_bar-link active-link" href="Flex-Generator.html">Learn</a></li>
+            <li id="search-bar__container">
+                <label>
+                    <input type="text" placeholder="Search...">
+                </label>
+                <span class="material-symbols-outlined">
+                  search
+                  </span>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="file-navigation">
+            <div class="navigation_container">
+            <a href="../../Index.html">Home</a>
+            >
+            <a href="#">Study</a>
+            >
+            <a href="#">Generators</a>
+            >
+            <a href="../Generators/Flex-Generator.html">Flex Generator</a>
+            </div>
+
+            <div id="additional-controls__display-button">
+                <button onclick="additionalControlDisplayButton()">
+                    <img src="../../Media/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+            </div>
+        </div>
+        <div class="flex-row">
+            <section id="generator-output">
+                <div class="resizeable" id="flex-container">
+                    <div class="flex-container__elements">element1</div>
+                    <div class="flex-container__elements">element2</div>
+                    <div class="flex-container__elements">element3</div>
+                </div>
+            </section>
+            <aside id="generator-additional-controls" class="additional-controls-container hide-container">
+                <h1 id="element-name">Select Element</h1>
+                <div class="flexBox">
+                    <button id="AddNewElement" title="Add new Element">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                    <button id="DeleteCurrentElement" title="Delete Selected Element">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </button>
+                </div>
+
+                <label>
+                    Element Name:
+                    <input id="element-name__input" type="text">
+                    <br>
+                    <span id="element-name__error">Error</span>
+                </label>
+                <br>
+                <label>
+                    Width:<br>
+                    <input id="element-width__input" type="text">
+                    <br>
+                    <span id="element-width__error">Error (Try: px, em, rem)</span>
+                </label>
+                <br>
+                <label>
+                    Height:<br>
+                    <input id="element-height__input" type="text">
+                    <br>
+                    <span id="element-height__error">Error (Try: px, em, rem)</span>
+                </label>
+                <br>
+                <label>
+                    Background Color: <br>
+                    <input id="element-background-color__input" type="text">
+                    <div id="element-background-color__output" class="color_output"></div>
+                    <span id="element-background-color__error">error</span>
+                </label>
+
+                <br>
+                <label>
+                    Color:<br>
+                    <input id="element-color__input" type="text">
+                    <div id="element-color__output" class="color_output"></div>
+                    <span id="element-color__error">error</span>
+                </label>
+
+                <br>
+                <label>
+                    Padding:<br>
+                    <input id="element-padding__input" type="text">
+                    <br>
+                    <span id="element-padding__error">Error (Try: px, em, rem)</span>
+                </label>
+
+                <br>
+                <label>
+                    Margin:<br>
+                    <input id="element-margin__input" type="text">
+                    <br>
+                    <span id="element-margin__error">Error (Try: px, em, rem)</span>
+                </label>
+
+                <br>
+                <label>
+                    Border Width:<br>
+                    <input id="element-border-width__input" type="text">
+                    <br>
+                    <span id="element-border-width__error">Error (Try: px, em, rem)</span>
+                </label>
+
+                <br>
+                <label>
+                    Border Color:<br>
+                    <input id="element-border-color__input" type="text">
+                    <div id="element-border-color__output" class="color_output"></div>
+                    <span id="element-border-color__error">error</span>
+                </label>
+
+                <br>
+                <label>
+                    Border-radius:<br>
+                    <input id="element-border-radius__input" type="text">
+                    <br>
+                    <span id="element-border-radius__error">Error (Try: px, em, rem)</span>
+                </label>
+
+            </aside>
+            <aside id="generator-controls">
+                <div>
+                    <h2>flex-direction</h2>
+                    <div class="flex-direction__button-container">
+<!--                        TODO: disable button when clicked-->
+                        <button onclick="FlexDirection('row')" type="button" class="flex-direction__button"><span class="tool-tip-text">flex-row</span><img src="../../Media/Flex-Row.svg" alt="Row"></button>
+                        <button onclick="FlexDirection('row-reverse')" class="flex-direction__button"><span class="tool-tip-text">flex-row reverse</span><img src="../../Media/Flex-Row-Reverse.svg" alt="Row Reverse"></button>
+                        <button onclick="FlexDirection('column')" class="flex-direction__button"><span class="tool-tip-text">flex-column</span><img src="../../Media/Flex-Column.svg" alt="Row"></button>
+                        <button onclick="FlexDirection('column-reverse')" class="flex-direction__button"><span class="tool-tip-text">flex-column reverse</span><img src="../../Media/Flex-Column-Reverse.svg" alt="Row Reverse"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>flex-wrap</h2>
+                    <div class="flex-wrap__button-container">
+                        <button onclick="FlexWrap('nowrap')" class="flex-wrap__button"><span class="tool-tip-text">no wrap</span><img src="../../Media/normal.svg"></button>
+                        <button onclick="FlexWrap('wrap')" class="flex-wrap__button"><span class="tool-tip-text">wrap</span><img src="../../Media/Flex-Wrap.svg"></button>
+                        <button onclick="FlexWrap('wrap-reverse')" class="flex-wrap__button"><span class="tool-tip-text">wrap-reverse</span><img src="../../Media/Flex-Wrap-Reverse.svg"></button>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>align-content</h2>
+                    <div class="align-content__button-container">
+                        <button onclick="AlignContent('normal')" class="align-content__button"><span class="tool-tip-text">normal</span><img class="rotate-image" src="../../Media/normal.svg"></button>
+                        <button onclick="AlignContent('center')" class="align-content__button"><span class="tool-tip-text">center</span><img src="../../Media/Justify-Content_Center.svg"></button>
+                        <button onclick="AlignContent('flex-start')" class="align-content__button"><span class="tool-tip-text">flex-start</span><img src="../../Media/Justify-Content_Flex-Start.svg"></button>
+                        <button onclick="AlignContent('flex-end')" class="align-content__button"><span class="tool-tip-text">flex-end</span><img src="../../Media/Justify-Content_Flex-End.svg"></button>
+                        <button onclick="AlignContent('space-between')" class="align-content__button"><span class="tool-tip-text">space-between</span><img src="../../Media/Justify-Content_Space-Between.svg"></button>
+                        <button onclick="AlignContent('space-around')" class="align-content__button"><span class="tool-tip-text">space-around</span><img src="../../Media/Justify-Content_Space-Around.svg"></button>
+                        <button onclick="AlignContent('space-evenly')" class="align-content__button"><span class="tool-tip-text">space-evenly</span><img src="../../Media/Justify-Content_Space-Evenly.svg"></button>
+                        <button onclick="AlignContent('stretch')" class="align-content__button"><span class="tool-tip-text">stretch</span><img src="../../Media/Justify-Content_Stretch.svg"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>justify-content</h2>
+                    <div class="justify-content__button-container">
+                        <button onclick="JustifyContent('normal')" class="justify-content__button"><span class="tool-tip-text">normal</span><img src="../../Media/normal.svg" ></button>
+                        <button onclick="JustifyContent('center')" class="justify-content__button"><span class="tool-tip-text">center</span><img class="rotate-image" src="../../Media/Justify-Content_Center.svg"></button>
+                        <button onclick="JustifyContent('flex-start')" class="justify-content__button"><span class="tool-tip-text">flex-start</span><img class="rotate-image" src="../../Media/Justify-Content_Flex-Start.svg"></button>
+                        <button onclick="JustifyContent('flex-end')" class="justify-content__button"><span class="tool-tip-text">flex-end</span><img class="rotate-image" src="../../Media/Justify-Content_Flex-End.svg"></button>
+                        <button onclick="JustifyContent('space-between')" class="justify-content__button"><span class="tool-tip-text">space-between</span><img class="rotate-image" src="../../Media/Justify-Content_Space-Between.svg"></button>
+                        <button onclick="JustifyContent('space-around')" class="justify-content__button"><span class="tool-tip-text">space-around</span><img class="rotate-image" src="../../Media/Justify-Content_Space-Around.svg"></button>
+                        <button onclick="JustifyContent('space-evenly')" class="justify-content__button"><span class="tool-tip-text">space-evenly</span><img class="rotate-image" src="../../Media/Justify-Content_Space-Evenly.svg"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>align-items</h2>
+                    <div class="align-items__button-container">
+                        <button onclick="AlignItems('normal')" class="align-items__button"><span class="tool-tip-text">normal</span><img src="../../Media/normal.svg" ></button>
+                        <button onclick="AlignItems('center')" class="align-items__button"><span class="tool-tip-text">center</span><img src="../../Media/Justify-Content_Center.svg"></button>
+                        <button onclick="AlignItems('flex-start')" class="align-items__button"><span class="tool-tip-text">flex-start</span><img src="../../Media/Justify-Content_Flex-Start.svg"></button>
+                        <button onclick="AlignItems('flex-end')" class="align-items__button"><span class="tool-tip-text">flex-end</span><img src="../../Media/Justify-Content_Flex-End.svg"></button>
+                        <button onclick="AlignItems('stretch')" class="align-items__button"><span class="tool-tip-text">stretch</span><img src="../../Media/Justify-Content_Stretch.svg"></button>
+                        <button onclick="AlignItems('baseline')" class="align-items__button"><span class="tool-tip-text">baseline</span><img src="../../Media/Flex-AlignItem-Baseline.svg"></button>
+
+                    </div>
+                </div>
+
+                <label id="code-outlet">
+<!--                    TODO:add two output container on top of everything when clicked on button for code-->
+                </label>
+            </aside>
+        </div>
+    </main>
+    <script src="../../script/Flex-Generator-Script.js"></script>
+    <script src="../../script/additional-Controls.js"></script>
+</body>
+</html>

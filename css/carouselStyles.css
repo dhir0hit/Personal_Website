@@ -1,0 +1,150 @@
+.carousel_container {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/*.carousel_container-content {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+.carousel_container-content {
+    display: flex;
+    position: absolute;
+    top:0;
+    width: 100%;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.carousel_container-content.transition-right {
+    transform: translateX(100%);
+    transition: transform 2s ease-in-out;
+
+}
+.carousel_container-content.transition-left {
+    transform: translateX(-100%);
+    transition: transform 2s ease-in-out;
+}
+.carousel_container-content.active-slide {
+    transform: translateX(0);
+
+}
+
+.carousel_container-content h1 {
+    /*background-color: #EB5E28;*/
+    margin-bottom: 0;
+    margin-top: 2.8rem;
+    padding-left: 5rem;
+    font-family: 'Economica', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.carousel_container-content .carousel-graphics {
+    /*background-color: gray;*/
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.carousel-graphics .display_output {
+    /*background-color: #CCC5B9;*/
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    list-style-type: disc;
+    line-height: 1.4;
+    font-family: 'Hind Siliguri', sans-serif;
+    /*margin: 0 auto;*/
+}
+
+.carousel-graphics img {
+    /*background-color: #0fc4da;*/
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+}
+.carousel-graphics__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*.carousel_container-content h1, .carousel_container-content img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75vh;
+    object-fit: contain;
+}
+.carousel_container-content img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.carousel_container-content h1{
+    background-color: #fff;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Economica', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}*/
+
+/*.carousel_container-content .display_output {*/
+/*    position: absolute;*/
+/*    !*top:auto;*!*/
+/*    !*bottom: auto;*!*/
+/*    right: 10%;*/
+/*    transform: translateY(20vh);*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    list-style-type: disc;*/
+/*    line-height: 1.4;*/
+
+/*}*/
+
+.carousel_navigator-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.carousel_navigator {
+    width: 30px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.carousel_navigation-button {
+    position: absolute;
+    top: 60%;
+    /*transform: translateY(-50%);*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#carousel-left_button {
+    left: 1rem;
+}
+
+#carousel-right_button {
+    right: 2rem;
+}
+
+.carousel_navigator.active-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+}

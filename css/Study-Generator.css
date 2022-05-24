@@ -1,0 +1,227 @@
+
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    top: 100px;
+}
+
+#file-navigation {
+    /*transform: translateY(100%);*/
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#additional-controls__display-button {
+    transform: translate(-380px);
+    /*transform: translate(-640px);*/
+}
+#additional-controls__display-button button {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+#additional-controls__display-button button img {
+    width: 100%;
+
+}
+.flex-row{
+    display: flex;
+    /*height: 96%;*/
+    height: 90vh;
+    margin-top: -100px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: center;
+}
+
+#generator-output {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    /*background-color: gray;*/
+    width: 100%;
+    padding: 2rem;
+    height: 100%;
+    align-items: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#flex-container {
+    display: flex;
+    /*background-color: darkgray;*/
+    border: 2px solid #EB5E28;
+    padding: 1rem;
+    height: fit-content;
+    /*transform: translateY(-50%);*/
+}
+
+.resizeable {
+    resize: both;
+    overflow: auto;
+}
+
+.flex-container__elements {
+    border: 2px red solid;
+}
+
+.additional-controls-container {
+    /*position: absolute;*/
+    height: 100%;
+    right: 0;
+    /*margin-right: 23vw;*/
+    background-color: darkgray;
+    width: 400px;
+    padding: 2rem;
+    overflow: auto;
+    line-height: 1.6;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+.additional-controls-container label span {
+    color: red;
+    /*position: absolute;*/
+    margin-top: -5px;
+}
+
+.additional-controls-container .flexBox {
+    display: flex;
+}
+
+.additional-controls-container .flexBox  button {
+    width: 100%;
+    margin: 0.2rem;
+}
+
+.additional-controls-container label input[type="text"] {
+    padding: 0.4rem;
+    border: none;
+}
+
+.additional-controls-container label .color_output {
+    border: #252422 1px solid;
+    width: 15px;
+    height: 15px;
+    background-color: #EB5E28;
+    position: relative;
+    transform: translate(160px, -133%);
+    margin-bottom: -15px;
+}
+
+.additional-controls-container label span {
+    visibility: hidden;
+}
+
+
+.hide-container {
+    width: 0;
+    padding: 0;
+    /*transition: width 1s linear;*/
+}
+
+#generator-controls {
+    /*position: absolute;*/
+    height: 100%;
+    right: 0;
+    background-color: #3b3b3b;
+    width: 400px;
+    padding: 2rem;
+    padding-top: 0;
+    overflow: auto;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Economica', sans-serif;
+    font-weight: 300;
+}
+
+#generator-controls div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+#generator-controls div div button {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0.2rem;
+    object-fit: cover;
+}
+
+#generator-controls div div button img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.rotate-image {
+    transform: rotate(90deg);
+
+}
+
+button .tool-tip-text {
+
+    visibility: hidden;
+    background-color: #252422;
+    color: #CCC5B9;
+    border-radius: 6px;
+    padding: 5px 10px;
+
+    position: absolute;
+    z-index: 1;
+
+    transform: translateY(-28px);
+    /*left: 50%;*/
+    margin-left: -15px;
+}
+
+button:hover .tool-tip-text {
+    visibility: visible;
+}
+
+#code-outlet textarea {
+    width: 100%;
+    height: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

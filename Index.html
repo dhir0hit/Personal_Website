@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="Media/9d340929286f4a25b4c18036d45eecf9.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400&family=Hind+Siliguri:wght@300;400;500&family=Meera+Inimai&display=swap" rel="stylesheet">
+
+    <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1080.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2013/02/28/firefly-pointer.html" target="_blank" title="Firefly Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Firefly Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+    <link rel="stylesheet" href="css/navigationBar.css">
+    <link rel="stylesheet" href="css/carouselStyles.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="stylesheet" href="css/botAnimationStyles.css">
+</head>
+<body>
+<nav>
+    <ul class="navigation_bar-logo"><a href="Index.html"><img src="Media/Logo.png" alt="Logo"></a></ul>
+    <ul class="navigation_bar">
+        <li><a class="navigation_bar-link active-link" href="Index.html">Home</a></li>
+        <li><a class="navigation_bar-link" href="#">Profile</a></li>
+        <li><a class="navigation_bar-link" href="Study/Generators/Flex-Generator.html">Learn</a></li>
+        <li id="search-bar__container">
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+            <span class="material-symbols-outlined">
+              search
+              </span>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <div class="carousel">
+        <div class="carousel_container">
+            <div class="carousel_container-content transition-left carousel_container-content1 active-slide">
+                <h1>Navigationbar Generator</h1>
+                <!--                  <p>display output-->
+                <div class="carousel-graphics">
+                    <div class="carousel-graphics__text">
+                        <ul class="display_output">
+                            <li>Display Output</li>
+                            <li>Pick from Different Designs</li>
+                            <li>Change Background Image</li>
+                            <li>Color Picker</li>
+                        </ul>
+                        <a href="#">Want to try it?</a>
+                    </div>
+                    <img src="Media/WebShuffle.png" >
+                </div>
+            </div>
+            <div class="carousel_container-content transition-right carousel_container-content2 ">
+                <h1>Password Manager</h1>
+                <div class="carousel-graphics">
+                    <div class="carousel-graphics__text">
+                        <ul class="display_output">
+                            <li>Interactive UI</li>
+                            <li>Modern Design</li>
+                            <li>High Security</li>
+                            <li>Non SALE product</li>
+                        </ul>
+                        <a href="#">Want to try it?</a>
+                    </div>
+                    <img src="Media/PasswordManagerStart.png" >
+                </div>
+            </div>
+            <div class="carousel_container-content transition-right carousel_container-content3 ">
+                <h1>Save your Passwords</h1>
+                <div class="carousel-graphics">
+                    <div class="carousel-graphics__text">
+                        <ul class="display_output">
+                            <li>Easy Navigation</li>
+                            <li>Many Options</li>
+                            <li>Creating account never been easy before</li>
+                            <li>Custom Icons</li>
+                        </ul>
+                        <a href="#">Want to try it?</a>
+                    </div>
+                    <img src="Media/PasswordManager.png">
+                </div>
+            </div>
+        </div>
+        <button onclick="changeSlide(-1)" class="carousel_navigation-button" id="carousel-left_button">
+              <span class="material-symbols-outlined">
+                  arrow_back_ios
+              </span>
+        </button>
+        <button onclick="changeSlide(1)" class="carousel_navigation-button" id="carousel-right_button">
+              <span class="material-symbols-outlined">
+                  arrow_forward_ios
+              </span>
+        </button>
+        <div class="carousel_navigator-container">
+            <div onclick="changeSlideUsingNavbar(0, 'dvs')" class="carousel_navigator active-slide"></div>
+            <div onclick="changeSlideUsingNavbar(1, 'dvs')" class="carousel_navigator"></div>
+            <div onclick="changeSlideUsingNavbar(2, 'dvs')" class="carousel_navigator"></div>
+        </div>
+    </div>
+    <div class="footer_container">
+        <div id="Bot">
+            <div class="head">
+                <div class="face">
+                    <div class="eyes Left-eye"></div>
+                    <div class="eyes Right-eye"></div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="leftArmContainer">
+                    <div class="leftArm">
+                        <div class="leftHand">
+                            <div class="leftHandFinger1"></div>
+                            <div class="leftHandFinger2"></div>
+                            <div class="leftHandFinger3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chest"></div>
+                <div class="rightArm"></div>
+            </div>
+        </div>
+        <span class="material-symbols-outlined" id="chatIcon">
+            chat
+        </span>
+    </div>
+</main>
+
+<script type="text/javascript" src="script/carouselFunctions.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+
+}
+
+.footer_container {
+    position: absolute;
+    right:2rem;
+    bottom: 2rem;
+    /*overflow: hidden;*/
+}
+.footer_container span {
+    cursor: pointer;
+    background-color: #0fc4da;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#chatIcon {
+    transform: translate(-9px, -8px);
+}

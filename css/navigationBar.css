@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 1rem;
+}
+nav ul li a{
+    color: #252422;
+}
+
+.navigation_bar-logo a{
+    margin: 1rem;
+}
+
+.navigation_bar {
+    padding-right: 1rem;
+}
+
+.navigation_bar li {
+    margin: 1rem;
+
+}
+.navigation_bar li a, .navigation_bar-logo a {
+    text-decoration: none;
+    font-family: 'Meera Inimai', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.navigation_bar li a:hover {
+    border-bottom: rgba(0,0,0,0.4) solid 2px;
+}
+
+.navigation_bar li a.active-link {
+    border-bottom: #252422 solid 2px;
+}
+
+.navigation_bar-logo a {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+.navigation_bar-logo a img{
+    height: 130%;
+}
+
+#search-bar__container {
+    cursor: pointer;
+    position: relative;
+    margin-top: 0.55rem;
+    /*margin-left: 0;*/
+    width: 30px;
+    /*overflow: hidden;*/
+}
+
+#search-bar__container * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*overflow: hidden;*/
+}
+
+#search-bar__container span {
+    background-color: #252422;
+    padding: 5px;
+    border-radius: 40px;
+    color: #EB5E28;
+}
+
+#search-bar__container input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 10px;
+    caret-color: #EB5E28;
+    opacity: 0;
+    border-radius: 40px 0  0 40px;
+    width: 0;
+    transition: width .8s linear;
+    transform: translateX(-15px);
+}
+
+#search-bar__container input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+
+#search-bar__container:hover {
+    /*padding-left: 150px;*/
+    width: 220px;
+    opacity: 1;
+    transition: width .8s linear;
+}
+
+/*#search-bar__container:hover + .navigation_bar-link {*/
+#search-bar__container:hover label input {
+    opacity: 1;
+    width: 180px;
+}
+
+#search-bar__container:after:hover label input{
+    /*padding-left: 0;*/
+    background-color: red;
+    /*transition: padding-left 1s linear;*/
+}
+
+
+#search-bar__container span {
+    position: absolute;
+    transform: translate(0px, 0px);
+}
