@@ -4,9 +4,9 @@ let activeSlideNumber = 0;
 let leftButton = document.getElementById("carousel-left_button");
 let rightButton = document.getElementById("carousel-right_button");
 
-let autoSlider = setInterval(function () {
-    changeSlide(1);
-}, 8000);
+// let autoSlider = setInterval(function () {
+//     changeSlide(1);
+// }, 8000);
 
 // console.log(slides[0].classList);
 
@@ -33,10 +33,10 @@ function changeSlideUsingNavbar(Id, direct){
         activeSlideNumber = Id;
     }
 
-    clearInterval(autoSlider);
-    autoSlider = setInterval(function () {
-        changeSlide(1);
-    }, 8000);
+    // clearInterval(autoSlider);
+    // autoSlider = setInterval(function () {
+    //     changeSlide(1);
+    // }, 8000);
 }
 
 function changeSlide(increment) {
@@ -93,8 +93,8 @@ function changeSlide(increment) {
         slides[1].classList.add("transition-left")
     }
 
-    clearInterval(autoSlider);
-    autoSlider = setInterval(function () {
-        changeSlide(1);
-    }, 8000);
+    // clearInterval(autoSlider);
+    // autoSlider = setInterval(function () {
+    //     changeSlide(1);
+    // }, 8000);
 }
