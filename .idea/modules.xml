@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../Studying/Lambton College III sem/.idea/Lambton College III sem.iml" filepath="$PROJECT_DIR$/../../../../Studying/Lambton College III sem/.idea/Lambton College III sem.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Personal_Website.iml" filepath="$PROJECT_DIR$/.idea/Personal_Website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/WebstormProjects.iml" filepath="$PROJECT_DIR$/../.idea/WebstormProjects.iml" />
     </modules>
   </component>
 </project>
