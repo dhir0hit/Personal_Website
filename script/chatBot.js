@@ -1,5 +1,6 @@
 window.onload = function () {
     document.getElementById("sendMessage").onclick = function () {sendMessage()}
+
 }
 
 function sendMessage() {
@@ -28,6 +29,7 @@ function sendReply(replyMessage) {
     replyOutput.innerHTML = replyMessage;
 
     ChatBox.appendChild(replyOutput);
+    console.log(replyMessage)
     replyOutput.scrollIntoView(true);
 }
 

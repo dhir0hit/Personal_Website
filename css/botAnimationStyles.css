@@ -91,6 +91,25 @@
         background-color: #000018;
     }
 }
+
+@keyframes botMove {
+    to {
+        transform: translate(-220px, -340px);
+    }
+    from {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeAway {
+    to {
+        opacity: 0;
+    }
+    from {
+        opacity: 1;
+    }
+}
+
 #Bot {
     position: absolute;
     right: -5rem;
@@ -98,7 +117,20 @@
     margin: 3rem;
     width: 100px;
     height: 150px;
+    transform: translate(0, 0);
 }
+
+#Bot.moveBot {
+    transform: translate(-220px, -340px);
+    animation: botMove ease-in 4s ;
+}
+
+#Bot.moveBot .body{
+    animation: fadeAway ease-in 4s ;
+    opacity: 0;
+}
+
+
 #Bot * {
     margin: 5px;
 }
@@ -134,7 +166,7 @@
 }
 
 #Bot .body {
-    /*display: inline;*/
+    display: block;
     background-color: transparent;
     width: 4px;
     /*height: 400px;*/

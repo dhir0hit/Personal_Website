@@ -2,7 +2,7 @@ class Brain {
     Json = json;
     Question = " ";
     result = []
-    Reply = "Couldn't understand your question";
+    Reply = "Sorry, Couldn't understand your question";
 
     constructor(question) {
         this.Question = question;
@@ -96,7 +96,3 @@ json = {"intents":  [
         "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
     }
 ]}
-/*brain = new Brain("hello there, i need some help")
-brain.Run();
-brain.FindReply();
-console.log(brain.Reply);*/

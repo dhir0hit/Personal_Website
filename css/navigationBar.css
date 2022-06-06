@@ -4,7 +4,7 @@ nav {
     margin-left: 5rem;
     margin-right: 5rem;
 }
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
     margin: 1rem;

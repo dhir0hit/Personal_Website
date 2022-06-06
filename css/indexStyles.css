@@ -17,5 +17,11 @@ body {
 }
 
 #chatIcon {
+    display: block;
+
     transform: translate(-9px, -8px);
+}
+
+.chatIcon input[type="checkbox"] {
+    display: none;
 }
