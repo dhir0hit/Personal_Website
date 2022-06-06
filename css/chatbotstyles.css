@@ -1,0 +1,151 @@
+@keyframes Grow {
+    from{
+        width: 0;
+        height: 0;
+        /*opacity: 0;*/
+    }
+    to {
+        width: 100%;
+        height: 400px;
+        /*opacity: 1;*/
+    }
+}
+
+
+
+#ChatBot {
+    /*display: none;*/
+    position: fixed;
+    transform: translate(-100%, -100%);
+
+
+    background-color: #cccccc;
+
+    max-width:300px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*transition: transform 2s ease-in-out, opacity 2s, width;*/
+    animation: Grow ease-in 2s;
+}
+
+#ChatBot .chatHead, #ChatBot .chatBody {
+    padding: 0 15px;
+}
+
+#ChatBot .chatHead{
+    background-color: #0fc4da;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ChatBot h3{
+    margin: 10px;
+}
+
+#ChatBot .chatHead button {
+    background-color: transparent;
+    border: none;
+}
+
+#ChatBot .chatHead button:hover {
+    color: #EB5E28;
+}
+
+#ChatBot .chatBody {
+    /*background-color: #ccc5b9;*/
+}
+
+#ChatOutput {
+    padding: 0;
+    /*position: relative;*/
+    height: 290px;
+    overflow: auto;
+    /*align-items: baseline;*/
+}
+
+#ChatOutput li {
+    list-style-type: none;
+    background-color: #EB5E28;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 5px;
+    max-width: 200px;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    overflow: hidden;
+}
+
+#ChatBot .chatBody #ChatOutput li.sent {
+    /*display: block;*/
+    clear: both;
+    float: right;
+    clear-after: both;
+}
+
+#ChatBot .chatBody #ChatOutput li.received {
+    /*display: block;*/
+    background-color: #958c88;
+    clear: both;
+    float: left;
+    clear-after: both;
+}
+
+#ChatBot .chatFoot label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ChatBot #ChatInput {
+    height: 23px;
+    width: 100%;
+}
+
+.chatFoot {
+    background-color: #606060;
+}
+
+#ChatInput {
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-family: 'Meera Inimai', sans-serif;
+    caret-color: #0fc4da;
+    caret-shape: block ;
+}
+#ChatInput:focus {
+    border: none;
+    outline: none;
+    /*background-color: transparent;*/
+}
+
+#ChatInput::placeholder {
+    color: white;
+}
+
+#sendMessage {
+    visibility: hidden;
+    pointer-events: none;
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-family: 'Meera Inimai', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sendMessage:hover {
+    background-color: #EB5E28;
+}
+
+#ChatInput:valid ~ #sendMessage {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
